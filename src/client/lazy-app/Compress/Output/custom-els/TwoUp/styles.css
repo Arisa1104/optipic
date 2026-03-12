@@ -55,12 +55,9 @@ two-up[legacy-clip-compat] > :not(.two-up-handle) {
   padding: 0 calc(var(--thumb-size) * 0.24);
 }
 
-.arrow-left {
-  fill: var(--pink);
-}
-
+.arrow-left,
 .arrow-right {
-  fill: var(--blue);
+  fill: #8b5cf6;
 }
 
 two-up[orientation='vertical'] .two-up-handle {

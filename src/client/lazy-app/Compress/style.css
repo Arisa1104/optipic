@@ -41,8 +41,8 @@
 }
 
 .options-1-theme {
-  --main-theme-color: var(--pink);
-  --hot-theme-color: var(--hot-pink);
+  --main-theme-color: #7c3aed;
+  --hot-theme-color: #6d28d9;
   --header-text-color: var(--white);
   --scroller-radius: var(--options-radius) var(--options-radius) 0 0;
   --rotate-copyoverbutton-angle: 90deg; /* To point down */
@@ -54,9 +54,9 @@
 }
 
 .options-2-theme {
-  --main-theme-color: var(--blue);
-  --hot-theme-color: var(--deep-blue);
-  --header-text-color: var(--dark-text);
+  --main-theme-color: #7c3aed;
+  --hot-theme-color: #6d28d9;
+  --header-text-color: var(--white);
   --scroller-radius: var(--options-radius) var(--options-radius) 0 0;
   --rotate-copyoverbutton-angle: -90deg; /* To point up */
 
@@ -117,7 +117,7 @@
   }
 
   &:focus .back-blob {
-    stroke: var(--deep-blue);
+    stroke: #8b5cf6;
     stroke-width: 5px;
     animation: strokePulse 500ms ease forwards;
   }
@@ -141,8 +141,8 @@
 }
 
 .back-blob {
-  fill: var(--hot-pink);
-  opacity: 0.77;
+  fill: #6d28d9;
+  opacity: 0.82;
 }
 
 .back-x {

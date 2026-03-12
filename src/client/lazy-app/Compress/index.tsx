@@ -61,6 +61,7 @@ interface Props {
   file: File;
   showSnack: SnackBarElement['showSnackbar'];
   onBack: () => void;
+  onCompressedFile?: (sourceFile: File, compressedFile: File) => void;
 }
 
 interface State {
@@ -902,6 +903,10 @@ export default class Compress extends Component<Props, State> {
           const sides = cleanSet(currentState.sides, sideIndex, side);
           return { sides };
         });
+
+        if (sideIndex === 1 && jobState.encoderState) {
+          this.props.onCompressedFile?.(source.file, file);
+        }
 
         this.activeSideJobs[sideIndex] = undefined;
       } catch (err) {
