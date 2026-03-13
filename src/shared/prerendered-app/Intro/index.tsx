@@ -36,13 +36,13 @@ export default class Intro extends Component<Props, State> {
   private installingViaButton = false;
 
   componentDidMount() {
-    // Listen for beforeinstallprompt events, indicating Squoosh is installable.
+    // Listen for beforeinstallprompt events, indicating OptiPic is installable.
     window.addEventListener(
       'beforeinstallprompt',
       this.onBeforeInstallPromptEvent,
     );
 
-    // Listen for the appinstalled event, indicating Squoosh has been installed.
+    // Listen for the appinstalled event, indicating OptiPic has been installed.
     window.addEventListener('appinstalled', this.onAppInstalled);
   }
 
@@ -205,13 +205,13 @@ export default class Intro extends Component<Props, State> {
               <footer class={style.footerItems}>
                 <a
                   class={style.footerLink}
-                  href="https://github.com/GoogleChromeLabs/squoosh/blob/dev/README.md#privacy"
+                  href="https://github.com/Arisa1104/optipic/blob/dev/README.md#privacy"
                 >
                   Privacy
                 </a>
                 <a
                   class={style.footerLinkWithLogo}
-                  href="https://github.com/GoogleChromeLabs/squoosh"
+                  href="https://github.com/Arisa1104/optipic"
                 >
                   <img src={githubLogo} alt="" width="10" height="10" />
                   Source on Github

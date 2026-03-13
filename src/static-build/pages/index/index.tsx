@@ -27,14 +27,17 @@ interface Props {}
 const Index: FunctionalComponent<Props> = () => (
   <html lang="en">
     <head>
-      <title>Squoosh</title>
+      <title>OptiPic</title>
       <meta
         name="description"
-        content="Squoosh is the ultimate image optimizer that allows you to compress and compare images with different codecs in your browser."
+        content="OptiPic is the ultimate image optimizer that allows you to compress and compare images with different codecs in your browser."
       />
+      <meta name="application-name" content="OptiPic" />
+      <meta name="apple-mobile-web-app-title" content="OptiPic" />
       <meta name="twitter:card" content="summary" />
-      <meta name="twitter:site" content="@SquooshApp" />
-      <meta property="og:title" content="Squoosh" />
+      <meta name="twitter:site" content="@OptiPic" />
+      <meta name="twitter:title" content="OptiPic" />
+      <meta property="og:title" content="OptiPic" />
       <meta property="og:type" content="website" />
       <meta property="og:image" content={`${siteOrigin}${ogImage}`} />
       <meta
@@ -50,7 +53,7 @@ const Index: FunctionalComponent<Props> = () => (
       />
       <meta
         name="og:description"
-        content="Squoosh is the ultimate image optimizer that allows you to compress and compare images with different codecs in your browser."
+        content="OptiPic is the ultimate image optimizer that allows you to compress and compare images with different codecs in your browser."
       />
       <meta
         name="viewport"
