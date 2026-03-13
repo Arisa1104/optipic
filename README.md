@@ -37,4 +37,4 @@ To develop for OptiPic:
 
 OptiPic is an open-source project that appreciates all community involvement. To contribute to the project, follow the [contribute guide](/CONTRIBUTING.md).
 
-[optipic]: https://optipic.app
+[optipic]: https://pic.arisawilliams.com/

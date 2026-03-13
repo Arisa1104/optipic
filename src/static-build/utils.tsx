@@ -70,10 +70,11 @@ export const siteOrigin = (() => {
     return `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`;
   if (process.env.VERCEL_URL) return `https://${process.env.VERCEL_URL}`;
   // https://docs.netlify.com/configure-builds/environment-variables/#build-metadata
-  if (process.env.CONTEXT === 'production') return 'https://optipic.app';
+  if (process.env.CONTEXT === 'production')
+    return 'https://pic.arisawilliams.com/';
   if (process.env.DEPLOY_PRIME_URL) return process.env.DEPLOY_PRIME_URL;
   console.warn(
-    'Unable to determine site origin, defaulting to https://optipic.app',
+    'Unable to determine site origin, defaulting to https://pic.arisawilliams.com/',
   );
-  return 'https://optipic.app';
+  return 'https://pic.arisawilliams.com/';
 })();
